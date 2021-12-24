@@ -12,5 +12,5 @@ export default function Card({title, link}: CardProps) {
       <h3>{title}</h3>
     </>
   )
-  return <div>{link ? <Link to={`/mission/${link}`}>{card}</Link> : card}</div>
+  return <div>{link ? <Link to={link}>{card}</Link> : card}</div>
 }

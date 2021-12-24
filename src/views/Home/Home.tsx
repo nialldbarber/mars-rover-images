@@ -6,9 +6,9 @@ export default function Home() {
     <div>
       <Title text="Mars Rover Images" isTruncated />
       <div>
-        <Card title="Curiosity" link="curiosity" />
-        <Card title="Opportunity" link="opportunity" />
-        <Card title="Spirit" link="spirit" />
+        <Card title="Curiosity" link="cameras/curiosity" />
+        <Card title="Opportunity" link="cameras/opportunity" />
+        <Card title="Spirit" link="cameras/spirit" />
       </div>
     </div>
   )
