@@ -1,26 +1,16 @@
-import {Link, Outlet, ReactLocation, Router} from 'react-location'
+import {Route, Routes} from 'react-router-dom'
 import {Cameras} from 'src/views/Cameras'
 import {Home} from 'src/views/Home'
+import {NotFound} from 'src/views/NotFound'
 import {SelectedCamera} from 'src/views/SelectedCamera'
-
-const location = new ReactLocation()
 
 export default function BaseRouter() {
   return (
-    <Router
-      location={location}
-      routes={[
-        {path: '/', element: <Home />},
-        {path: '/cameras/:id', element: <Cameras />},
-        {path: '/types/:camera', element: <SelectedCamera />},
-      ]}
-    >
-      <div>
-        <Link to="/">
-          <p>Logo</p>
-        </Link>
-        <Outlet />
-      </div>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/cameras/:id" element={<Cameras />} />
+      <Route path="/types/:camera" element={<SelectedCamera />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   )
 }

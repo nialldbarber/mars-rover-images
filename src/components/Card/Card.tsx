@@ -1,4 +1,4 @@
-import {Link} from 'react-location'
+import {Link} from 'react-router-dom'
 
 type CardProps = {
   title: string
@@ -8,7 +8,7 @@ type CardProps = {
 export default function Card({title, link}: CardProps) {
   const card = (
     <>
-      <p>IMAGE</p>
+      {/* <p>IMAGE</p> */}
       <h3>{title}</h3>
     </>
   )

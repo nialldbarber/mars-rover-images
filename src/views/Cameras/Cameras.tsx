@@ -1,12 +1,10 @@
-import {useMatch} from 'react-location'
+import {useParams} from 'react-router-dom'
 import {Card} from 'src/components/Card'
 import {Title} from 'src/components/Title'
 import {cameras} from 'src/constants/rovers'
 
 export default function Cameras() {
-  const {
-    params: {id},
-  } = useMatch()
+  const {id} = useParams()
 
   return (
     <div>

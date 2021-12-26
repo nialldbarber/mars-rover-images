@@ -1,4 +1,4 @@
-import {StyledTitle} from 'src/components/Title/styles'
+import {StyledTitle} from 'src/components/Title/Title.styles'
 import {HEADER_LIST} from 'src/constants/heading'
 
 export type TitleProps = {

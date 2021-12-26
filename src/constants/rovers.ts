@@ -1,3 +1,15 @@
+export const CAMERAS: Record<string, string> = {
+  fhaz: 'Front Hazard Avoidance Camera',
+  rhaz: 'Rear Hazard Avoidance Camera',
+  mast: 'Mast Camera',
+  chemcam: 'Chemistry and Camera Complex',
+  mahli: 'Mars Hand Lens Imager',
+  mardi: 'Mars Descent Imager',
+  navcam: 'Navigation Camera',
+  pancam: 'Panoramic Camera',
+  minites: 'Miniature Thermal Emission Spectrometer (Mini-TES)',
+}
+
 export const cameras: Record<
   string,
   {
